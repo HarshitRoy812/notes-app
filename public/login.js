@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 localStorage.removeItem('token');
 
 var loginBtn = document.getElementById('login-btn');
@@ -38,7 +40,7 @@ loginBtn.addEventListener('click',async () => {
 dashboardBtn.addEventListener('click',async () => {
     
     const token = localStorage.getItem('token');
-
+    const port = process.env.PORT || 3000;
     try {
         const res = await axios.get('/auth',{
             headers : {
@@ -46,7 +48,7 @@ dashboardBtn.addEventListener('click',async () => {
             }
         })
 
-        window.location.href = 'http://localhost:3000/dashboard';
+        window.location.href = `http://localhost:${port}/dashboard`;
     
     } catch (err){
         dashboardErr.innerHTML = `<i class="fa-solid fa-xmark dash_err"></i>${err.response.data.msg}`
