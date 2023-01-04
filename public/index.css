@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    height : 100vh;
+    width : 100vw;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+#nav_bar {
+    display : flex;
+    flex-direction: row;
+    height : 13vh;
+    width : 100%;
+    background : #ffdd00;
+    align-items: center;
+}
+
+#logo {
+    height : 90px;
+    width : 200px;
+    margin-left : 20px;
+}
+
+.nav_links {
+    display : flex;
+    flex-direction: row;
+    margin : auto;
+}
+
+.nav_link {
+    list-style: none;
+    margin-right : 30px;    
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.3px;
+    font-size : 17px;
+}
+.nav_link a {
+    text-decoration: none;
+    color : #000000;
+}
+
+
+#main_content {
+    display : flex;
+    flex-direction: column;
+    width : 50vw;
+    min-height : 30vh;
+    margin : auto;
+    align-items : center;
+    margin-top : 50px;
+}
+
+#welcome_div {
+    display : flex;
+    flex-direction: column;
+    width : 400px;
+    min-height : 20px;
+    justify-content: center;
+    align-items: center;
+}
+#welcome_heading{
+    font-family: 'Abril Fatface';
+    letter-spacing: 1px;
+}
+#welcome_info {
+    font-family: 'Questrial', sans-serif;
+    font-size: 12px;
+    margin-top : 10px;
+}
+
+
+#info {
+    align-self: flex-start;
+    margin : 50 0 0 140px;
+    color : rgba(0,0,0,0.7);
+    font-family: 'Abril Fatface';
+    font-weight: 300;
+}
+
+
+#login, #register{
+    align-self: flex-start;
+    margin : 30 0 0 140px;
+    font-family: 'Abril Fatface';
+    text-transform: lowercase;
+    
+}
+#login label,#register label {
+    font-size : 20px;
+}
+
+#login input[type='email'],#login input[type='password'],#register input[type='text'],#register input[type='email'],#register input[type='password']{
+    margin-top: 7px;
+    width : 250px;
+    height : 30px;
+    outline : none;
+    border : none;
+    background-color : #edf2f4;
+    border-radius: 3px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+    text-indent: 7px;
+}
+
+#login input::-webkit-input-placeholder,#register input::-webkit-input-placeholder{
+    color : #000000;
+    font-weight: lighter;
+    font-family: 'Questrial', sans-serif;
+    font-size: 12px;
+}
+
+
+#submit-div {
+    width : 450px;
+    display : flex;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 20px;
+    margin-top : 20px;
+}
+
+.span {
+    font-family: 'Questrial';
+    letter-spacing: -0.5px;
+    margin-left : 40px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.span-btn {
+    margin-left : 10px;
+    outline : none;
+    border : none;
+    background : none;
+    text-decoration: underline;
+    font-family: 'Abril Fatface';
+    font-size: 15px;
+}
+
+.span-btn a {
+    text-decoration: none;
+    color : #000000;
+}
+
+#login-btn {
+    width : 170px;
+    height : 40px;
+    outline : none;
+    border: none;
+    background : rgba(116, 0, 184,0.8);
+    font-size: 15px;
+    font-family: 'Questrial', sans-serif;
+    border-radius: 3px;
+    color : #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#login-btn:hover {
+    background : #6930c3;
+}
+
+#login-btn:active {
+    box-shadow : inset 0 3px 5px rgba(0,0,0,0.7);
+}
+
+
+#gender {
+    margin-top : 10px;
+    width : 100px;
+    height : 30px;
+    border : none;
+    cursor : pointer;
+    outline : none;
+}
+
+#register input[type='radio']{
+    margin-top : 20px;
+    margin-left : 20px;
+}
+
+#registerBtn {
+    display : flex;
+    flex-direction: row;
+    margin-top : 20px;
+    min-height : 20px;
+    align-items: flex-end;
+}
+
+#register-button {
+    width : 170px;
+    height : 40px;
+    outline : none;
+    border : none;
+    background :rgba(116, 0, 184,0.8);
+    border-radius: 3px;
+    color : #fff;
+    font-size: 15px;
+    cursor : pointer;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+ 
+}
+
+#register-button:hover {
+    background : #6930c3;
+}
+
+.res-message {
+    margin-top : 15px;
+    font-family: 'Questrial', sans-serif;
+    text-transform: capitalize;
+    font-size : 15px;
+}
+
+.res-message i {
+    margin-right : 5px;
+}
+#login-res-msg {
+    margin-top : 30px;
+    font-size : 15px;
+}
+
+#dashboardBtn {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    padding : 10px;
+    outline : none;
+    border : none;
+    background : rgba(116, 0, 184,0.8);
+    color : #fff;
+    font-family: 'Questrial', sans-serif;
+    font-size : 15px;
+    cursor : pointer;
+    border-radius: 3px;
+    width : 200px;
+    height : 50px;
+    display : none; 
+}
+
+
+#dashboardBtn i {
+    margin-left : 5px;
+}
+
+#dashboardBtn:hover {
+    background : #6930c3;
+}
+
+#dashboard_err {
+    transform : translate(-50%,-50%);
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    margin-top : 50px;
+    color : #e63946;
+}
+
+.dash_err {
+    margin-right : 5px;
+    padding : 5px;
+    color : white;
+    background : #e63946;
+    border-radius: 5px;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES*/
+
+@media screen and (max-width : 700px){
+    #welcome_heading {
+        font-size : 17px;
+    }
+    .nav_link{
+        font-size: 14px;
+    }
+    #info {
+        font-size : 12px;
+        margin : 50 0 0 70px !important;
+    }
+    #login,#register {
+        margin : 30 0 0 50px;
+    }
+    #login label,#register label {
+        font-size : 14px;
+    }
+    #submit-div,#registerBtn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .span {
+        margin-top : 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width : 400px){
+    #welcome_heading {
+        font-size : 10px;
+    }
+    .nav_link{
+        font-size: 10px;
+    }
+    #logo {
+        height : 60px;
+        width : 150px;
+        margin-left : 20px;
+    }
+}
+
+@media screen and (max-width : 450px){
+    #login,#register {
+        margin : 30 0 0 0px;
+    }
+    #login input,#register input {
+        width : 150px !important;
+        font-size : 12px !important;
+    }
+    #info {
+        margin : 50px 0 0 50px !important;
+        font-size : 10px
+    }
+    #register label {
+        margin-right : 100px !important
+    }
+}
+@media screen and (max-width : 350px){
+    #info {
+        margin : 50px 0 0 20px !important
+    }
+}
+@media screen and (max-width : 300px){
+    .nav_link{
+        font-size : 10px !important;
+        margin-right: 10px !important;
+    }
+}
+
+@media screen and (max-width : 270px){
+    #info {
+        margin-right : 20px !important;
+        font-size : 7px !important;
+    }
+    .nav_links {
+        flex-direction: column;
+    }
+    .nav_link {
+        margin-top : 10px;
+    }
+    #logo {
+        height : 50px;
+        width : 100px;
+    }
+}
+@media screen and (max-width : 240px){
+    #info {
+        font-size : 7px !important;
+        margin : 50 0 0 0 !important;
+    }
+    #login,#register {
+        margin : 30 0 0 -20px !important;
+    }
+    .span {
+        font-size : 10px !important;
+    }
+    .span-btn{
+        font-size : 10px !important;
+        margin-left : 40px !important
+    }
+}
+@media screen and (max-width : 200px){
+    #welcome_heading {
+        font-size : 7px;
+    }
+    .nav_link{
+        font-size: 7px;
+        margin-right: 10px;
+    }
+    #logo {
+        height : 50px;
+        width : 100px;
+        margin-left : 0px;
+    }
+    #info {
+        margin : 50px 0 0 0px !important;
+    }
+    #welcome_info {
+        font-size: 8px !important;
+    }
+    #login input,#register input {
+        width : 120px !important;
+    }
+    #login-btn {
+        width : 100px !important;
+        height : 30px !important;
+    }
+    #logo {
+        width : 70px !important;
+    }
+}

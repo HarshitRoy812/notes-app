@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = 'stylesheet' href = 'index.css'>
+
+    <title> NotesZen </title>
+
+</head>
+<body>
+
+    <div id = 'nav_bar'>
+
+        <img src = 'images/logo.png' id = 'logo'> 
+
+        <ul class = 'nav_links'>
+            <li class = 'nav_link'> <a href = '/'> Login </a> </li>
+            <li class = 'nav_link'> <a href = '/register'> Register </a> </li>
+        </ul>
+
+    </div>
+
+    <main>
+
+        <div id = 'main_content'>
+
+            <div id = 'welcome_div'>
+                <h1 id = 'welcome_heading'> Welcome To NotesZen. </h1>
+                <p id = 'welcome_info'> Keep track of your daily notes. </p>
+            </div>
+
+            <div id = 'register'>
+
+            <label for = 'name'> Name </label> <br>
+            <input type = 'text' value = '' placeholder = 'Enter your name' id = 'name'> 
+
+            <br> <br>
+
+            <label for = 'email'> E-Mail </label> <br>
+            <input type = 'email' value = '' placeholder = 'Enter your email' id = 'email'> 
+
+            <br> <br>
+
+            <label for = 'password'> Password </label> <br>
+            <input type = 'password' value = '' placeholder = 'Enter your password' id = 'password'> 
+
+            <br><br>
+
+            <label for = 'gender'> Gender </label>  <br>
+
+            <input type = 'radio' id = 'male' name = 'gender' value = 'male'>
+            <label for = 'male'> Male </label>
+
+            <input type = 'radio' id = 'female' name = 'gender' value = 'female'>
+            <label for = 'female'> Female </label>
+
+            <br> 
+
+            <div id = 'registerBtn'>
+                <input type = 'submit' value = 'Register' id = 'register-button'>
+                <p class = 'span'> Already Registered ? </p>
+                <button class = 'span-btn'> <a href = '/'> Login here </a> </button> 
+            </div>
+
+            <p class = 'res-message' id = 'register-res-msg'> </p>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = 'register.js'> </script>
+    
+</body>
+</html>

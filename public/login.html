@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = 'stylesheet' href = 'index.css'>
+
+    <title> NotesZen </title>
+
+</head>
+<body>
+
+    <div id = 'nav_bar'>
+
+        <img src = 'images/logo.png' id = 'logo'> 
+
+        <ul class = 'nav_links'>
+            <li class = 'nav_link'> <a href = '/'> Login </a> </li>
+            <li class = 'nav_link'> <a href = '/register'> Register </a> </li>
+        </ul>
+
+    </div>
+
+    <main>
+
+        <div id = 'main_content'>
+
+            <div id = 'welcome_div'>
+                <h1 id = 'welcome_heading'> Welcome To NotesZen. </h1>
+                <p id = 'welcome_info'> Keep track of your daily notes. </p>
+            </div>
+            
+
+
+            <h3 id = 'info'> Please Login to continue. </h3>
+
+            <div id = 'login'>
+
+                <label for = 'email'> E-Mail </label> <br> 
+                <input type = 'email' placeholder = 'Enter your e-mail' id = 'email'> 
+                
+                <br><br>
+
+                <label for = 'password'> Password </label> <br> 
+                <input type = 'password' placeholder = 'Enter your password' id = 'password'> 
+
+                <br>
+
+                <div id = 'submit-div'>
+                    <input type = 'submit' value = 'Login' id = 'login-btn'>
+                    <p class = 'span'> New user ? </p>
+                    <button class = 'span-btn'> <a href = '/register'> Register here </a> </button> 
+                </div>
+
+            </div>
+
+            <p class = 'res-message' id = 'login-res-msg'> </p>
+
+        </div>
+
+        
+        <!--   AFTER LOGIN , DISPLAY THE DASHBOARD BUTTON  -->
+
+        <button id = 'dashboardBtn'> GO TO DASHBOARD <i class="fa-solid fa-arrow-right"></i> </button> 
+        <p id = 'dashboard_err'> </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = 'login.js'> </script>
+    
+</body>
+</html>

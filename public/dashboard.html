@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NotesZen - Dashboard </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = 'stylesheet' href = 'dashboard.css'>
+</head>
+<body>
+
+    <div id = 'navbar'>
+        <h1> NotesZen </h1>
+    </div>
+
+    <main>
+
+        <div id = 'main'> 
+
+            <h1 id = 'welcome_header'> Welcome , <span id = 'welcome_header_name'> </span> ! </h1>
+        
+        
+            <button id = 'add_note_btn' class = 'add'> <i class="fa-solid fa-note-sticky"></i> Add a Note </button>
+
+            <div id = 'filled_notes_div'>
+                
+
+            </div>
+
+
+            <div id = 'empty_notes_div'>
+                <img src = 'images/empty.png'> 
+                <h1> Uh-oh! Seems like you have no notes currently ... </h1>
+                <button class = 'add' id = 'empty_add'> <i class="fa-solid fa-note-sticky"></i> Add a Note </button>
+                
+            </div>
+
+        </div>  
+
+
+        <div id = 'add_note_modal'>
+            
+            <label for = 'note'> Add a note </label> <br>
+            <textarea id = 'note' rows = "5" cols = "30"> </textarea>
+
+            <p id = 'res-msg'> </p> 
+
+            <button id = 'add_note'> <i class="fa-solid fa-plus"></i> ADD </button> 
+            <div id = 'close_div'>
+                <i class = "fa-solid fa-close" id = 'close_btn'> </i>
+            </div>
+
+        </div>
+
+        <div id = 'edit_note_modal'>
+            <label for = 'editedText'> Edit Note </label> <br>
+            <textarea id = 'editedText' rows = "5" cols = "30"> </textarea>
+
+            <p id = 'edit-res-msg'> </p> 
+
+            <button id = 'edit_note_btn'> <i class="fa-solid fa-pen-to-square"></i> </i> EDIT </button> 
+            <div id = 'close_div'>
+                <i class = "fa-solid fa-close" id = 'edit_close_btn'> </i>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = 'dashboard.js'> </script>
+
+</body>
+</html>
