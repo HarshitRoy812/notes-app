@@ -4,7 +4,6 @@ const routes = require('./routes/routes');
 const connectDB = require('./db/connection');
 const helmet = require('helmet');
 const cors = require('cors');
-const xss = require('xss');
 const rateLimiter = require('express-rate-limit');
 
 require('dotenv').config();
@@ -23,8 +22,6 @@ max : 100
 }));
 app.use(helmet());
 app.use(cors());
-app.use(xss());
-
 
 const port = process.env.PORT || 3000;
 
