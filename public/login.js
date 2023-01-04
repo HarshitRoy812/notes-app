@@ -46,7 +46,7 @@ dashboardBtn.addEventListener('click',async () => {
             }
         })
 
-        window.location.href = `http://localhost:7000/dashboard`;
+        window.location.href = `http://localhost:10000/dashboard`;
     
     } catch (err){
         dashboardErr.innerHTML = `<i class="fa-solid fa-xmark dash_err"></i>${err.response.data.msg}`
