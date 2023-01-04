@@ -46,7 +46,7 @@ dashboardBtn.addEventListener('click',async () => {
             }
         })
 
-        window.location.href = `http://localhost:10000/dashboard`;
+        window.location.href = `https://notes-app-brq7.onrender.com/dashboard`;
     
     } catch (err){
         dashboardErr.innerHTML = `<i class="fa-solid fa-xmark dash_err"></i>${err.response.data.msg}`
